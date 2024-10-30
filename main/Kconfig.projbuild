@@ -1,0 +1,45 @@
+menuconfig WIFI_CONFIG
+    bool "Wi-Fi Configuration"
+    default y
+    help
+      Enable Wi-Fi configuration options.
+
+if WIFI_CONFIG
+
+config WIFI_SSID
+    string "Wi-Fi SSID"
+    default "Your_SSID"
+    help
+      Enter the SSID of your Wi-Fi network.
+
+config WIFI_PASSWORD
+    string "Wi-Fi Password"
+    default "Your_PASSWORD"
+    help
+      Enter the password of your Wi-Fi network.
+
+config WIFI_LOCAL_IP
+    string "Wi-Fi Local IP"
+    default "Your_IP"
+    help
+      Enter the local IP address of your ESP32.
+
+config WIFI_GATEWAY
+    string "Wi-Fi Gateway"
+    default "Your_GATEWAY"
+    help
+      Enter the gateway of your Wi-Fi network.
+
+config WIFI_SUBNET
+    string "Wi-Fi Subnet"
+    default "Your_SUBNET"
+    help
+      Enter the subnet mask of your Wi-Fi network.
+
+config WIFI_DNS
+    string "Wi-Fi DNS"
+    default "Default_DNS"
+    help
+      Enter the DNS of your Wi-Fi network.
+
+endif
